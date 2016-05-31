@@ -1,8 +1,8 @@
 version: '2'
 services:
-  anaconda:
-    build: ./
+  tensorflow:
+    build: .
     ports:
-      - '8888:8888'
-    # volumes:
-    #   - ./notebooks:/notebooks
+      - 8888:8888
+    volumes:
+      - ./notebooks:/notebooks
